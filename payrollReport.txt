@@ -1,0 +1,12 @@
+Name: Giselle Robinson, Department: Accounting
+Monthly Gross Salary: $5600.00, Bonus: 5.00%, Taxes: 30.00%
+Paycheck:                         $4200.00
+Distance Traveled: 450.00 miles, Travel Time: 9.00 hours
+Average Speed: 50.00 miles per hour
+
+Name: John Smith, Department: Sales
+Monthly Gross Salary: $4200.00, Bonus: 10.00%, Taxes: 25.00%
+Paycheck:                         $3570.00
+Distance Traveled: 300.00 miles, Travel Time: 5.00 hours
+Average Speed: 60.00 miles per hour
+
