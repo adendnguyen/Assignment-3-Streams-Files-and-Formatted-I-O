@@ -159,7 +159,7 @@ int main()
 
 /*Test Run #1
         Enter a line of text >> Hello World
-        H is a letter
+        The first character is a letter
         You entered: Hello World
         Enter an integer >> 42
         Enter a description >> The answer to the ultimate question of Life, the Universe, and Everything
