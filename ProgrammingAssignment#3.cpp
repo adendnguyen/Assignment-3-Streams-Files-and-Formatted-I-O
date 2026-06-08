@@ -31,6 +31,11 @@ int main()
         cout << ("Error: Input file could not be opened") << endl;
         return 1;
     }
+    if(!outFile.is_open())
+    {
+       cout << ("Error: Output file could not be opened") << endl;
+        return 1;
+    }
  
  
     // Variables for one employee's data
@@ -62,7 +67,7 @@ int main()
         //         and use setw at least once.
         outFile  << "Name: "  << firstName << " " << lastName << ", Department: " << department << endl;
         outFile  << "Monthly Gross Salary: $" << grossSalary << ", Bonus: " << bonusPercent << "%, Taxes: " << taxPercent << "%" << endl;
-        outFile  << left << setw(25) << "Paycheck: " << right << setw(10) << "$" << paycheck << endl;
+        outFile << "Paycheck: $" << setw(10) << paycheck  << endl;
         outFile  << "Distance Traveled: " << distance << " miles, Travel Time: " << travelTime << " hours" << endl;
         outFile  << "Average Speed: " << averageSpeed << " miles per hour" << endl;
         outFile << endl;
@@ -87,11 +92,15 @@ int main()
     firstChar = cin.peek();
     if(isdigit(firstChar))
     {
-        cout << firstChar << " is a digit" << endl;
+        cout << "The first character is a digit" << endl;
     }
     else if (isalpha(firstChar))
     {
-        cout << firstChar << " is a letter" << endl;
+       cout << "The first character is a letter" << endl;
+    }
+    else
+    {
+        cout << "The first character is neither a digit nor a letter" << endl;
     }
     getline(cin, line);
     cout <<"You entered: " << line << endl;
@@ -162,7 +171,7 @@ int main()
 
 /*Test Run #2
         Enter a line of text >> 55 burgers 55 fries
-        5 is a digit
+        The first character is a digit
         You entered: 55 burgers 55 fries
         Enter an integer >> 4
         Enter a description >> It is my lucky number!
